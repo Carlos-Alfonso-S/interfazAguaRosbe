@@ -1,0 +1,20 @@
+{% extends './index.html' %} {% block title%} Inicio Sesion {% endblock %}{% block container %}
+<!-- Popular courses End -->
+<div>
+    <div style="width: 500px;">
+        <h3>Ingresar Usuario:</h3>
+        {% from "_macro.html" import render_field %}
+        <form method="POST">
+            <p>
+                {{ render_field(form.iduser, id="idusuario ") }}
+
+                <button type="submit ">Verificar</button>
+            </p>
+        </form>
+
+
+    </div>
+
+</div>
+
+{% endblock %}

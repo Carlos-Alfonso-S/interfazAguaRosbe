@@ -1,0 +1,62 @@
+{% extends './index.html' %} {% block title%} Recargar {% endblock %}{% block container %}
+<div class="page-heading ">
+    <div class="container ">
+        <div style="width: 300px;" class="col">
+            <h2>Usuario:
+                <table>{% for i in data %}
+                    <tr>
+                        <td>{{ i[0] }}</td>
+                        <td>{{ i[1] }}</td>
+                        <td>{{ i[2] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </h2>
+        </div>
+
+        <h2>Elija su producto</h2>
+
+
+    </div>
+</div>
+<!-- Popular courses End -->
+<div class="learn-courses ">
+    <div class="container ">
+        <div class="courses ">
+            <div class="owl-one owl-carousel ">
+                <div class="box-wrap " itemprop="event " itemscope itemtype=" http://schema.org/Course ">
+                    <div class="img-wrap " itemprop="image "><img src="{{ url_for('static', filename='images/600 ml.png') }}" alt="courses picture "></div>
+                    <a href="app/templates/llenado.html " class="learn-desining-banner " itemprop="name "><button type="submit">Botella 600 Ml >>></button></a>
+                    <div class="box-body " itemprop="description ">
+                        <p>600 Ml de Agua</p>
+                        <p>Costo $3 mxn</p>
+                        <!-- <img src="images/QR600.png " alt="courses picture "> -->
+                        </section>
+                    </div>
+                </div>
+                <div class="box-wrap " itemprop="event " itemscope itemtype=" http://schema.org/Course ">
+                    <div class="img-wrap " itemprop="image "><img src="{{ url_for('static', filename='images/1 litro.png') }}" alt="courses picture "></div>
+                    <a href="app/templates/llenado1.html " class="learn-desining-banner " itemprop="name ">Botella 1 Litro >>></a>
+                    <div class="box-body " itemprop="description ">
+                        <p>1 Litro de Agua</p>
+                        <p>Costo $5 mxn</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box-wrap " itemprop="event " itemscope itemtype=" http://schema.org/Course ">
+                    <div class="img-wrap " itemprop="image "><img src="{{ url_for('static', filename='images/1.5 litros.png') }}" alt="courses picture "></div>
+                    <a href="app/templates/llenado2.html " class="learn-desining-banner " itemprop="name ">Botella 1.5 Litros >>></a>
+                    <div class="box-body " itemprop="description ">
+                        <p>1.5 Litros de Agua</p>
+                        <p>Costo $8 mxn</p>
+                        </section>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

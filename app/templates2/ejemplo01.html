@@ -1,0 +1,21 @@
+{% extends './base.html' %} {% block title%} Index {% endblock %} {% block container %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in data.Anime %}
+                    <tr>
+                        <td>{{p}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+        </div>
+    </div>
+</div>
+{% endblock %}

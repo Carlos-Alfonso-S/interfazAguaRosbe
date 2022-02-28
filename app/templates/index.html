@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title%} {% endblock %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/lightbox.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flexslider.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.rateyo.css') }}" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inner-page-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+        <header class="site-header">
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo-wrap" itemprop="logo">
+                        <img src="{{ url_for('static', filename='images/rosbe.png') }}" width="64 " height="64 " alt="Logo Image ">
+                        <!-- <h1>Education</h1> -->
+                    </div>
+                    <div class="nav-wrap ">
+                        <nav class="nav-desktop ">
+                            <ul class="menu-list ">
+                                <li><a href="# ">Home</a></li>
+                                <li class="menu-parent ">Productos
+                                    <ul class="sub-menu ">
+                                        <li><a>Agua 600 ml</a></li>
+                                        <li><a>Agua 1 Litro</a></li>
+                                        <li><a>Agua 1.5 Litros</a></li>
+                                        <!-- <li><a href="# ">Child</a></li> -->
+                                    </ul>
+                                </li>
+                                <li><a href=" ">Nosotros</a></li>
+                                <li><a href=" ">Puntos de Venta</a></li>
+                            </ul>
+                        </nav>
+                        <div id="bar ">
+                            <i class="fas fa-bars "></i>
+                        </div>
+                        <div id="close ">
+                            <i class="fas fa-times "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Close -->
+        <div class="banner ">
+            <div class="image_1 " itemprop="image ">
+                <img src="{{ url_for('static', filename='images/fondo gotas.jpg') }}" width="10 " height="30 " alt="Image of Bannner ">
+            </div>
+            <div class="container " itemprop="description ">
+                <font color="black ">
+                    <h1>Vending Machine</h1>
+                </font>
+                <font color="black ">
+                    <h3>Bienvenido</h3>
+                </font>
+            </div>
+            <div id="owl-four-nav " class="owl-nav ">
+
+            </div>
+        </div>
+        <div class="container">
+
+            {% block container %} {% endblock %}
+        </div>
+
+        <!-- Popular courses End -->
+
+    </div>
+    </div>
+    <section class="query-section ">
+        <div class="container ">
+            <p>Dudad? Contactate con nosotros: <a><i class="fas fa-phone "></i> 493*******</a></p>
+        </div>
+    </section>
+    <!-- End of Query Section -->
+    <footer class="page-footer " itemprop="footer " itemscope itemtype="http://schema.org/WPFooter ">
+        <div class="footer-first-section ">
+            <div class="container ">
+                <div class="box-wrap " itemprop="Nosotros ">
+                    <header>
+                        <h1>Nosotros</h1>
+                    </header>
+                    <p>ROSBE</p>
+
+                    <h4><a><i class="fas fa-phone "></i> 493*******</a></h4>
+                    <h4><a><i class="fas fa-envelope "></i> info@rosbe.com</a></h4>
+                    <h4>
+                        <a></i>Fresnillo, Zacatecas, Mexico</a>
+                    </h4>
+                </div>
+                <div class="box-wrap ">
+                    <header>
+                        <h1>Sugerencias</h1>
+                    </header>
+                    <section class="quick-contact ">
+                        <input type="email " name="email " placeholder="Correo Electronico* ">
+                        <textarea placeholder="Escribe tu mensaje* "></textarea>
+                        <button>Enviar</button>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of box-Wrap -->
+        <div class="footer-second-section ">
+            <div class="container ">
+                <hr class="footer-line ">
+                <ul class="social-list ">
+                    <li><a href=" "><i class="fab fa-facebook-square "></i></a></li>
+                    <li><a href=" "><i class="fab fa-twitter "></i></a></li>
+                    <li><a href=" "><i class="fab fa-skype "></i></a></li>
+                    <li><a href=" "><i class="fab fa-youtube "></i></a></li>
+                    <li><a href=" "><i class="fab fa-instagram "></i></a></li>
+                </ul>
+                <hr class="footer-line ">
+            </div>
+        </div>
+        <div class="footer-last-section ">
+            <div class="container ">
+                <p>Copyright 2022 &copy; aguarosbe.com </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script type="text/javascript " src="{{ url_for('static', filename='js/jquery-3.3.1.min.js ') }}"></script>
+    <script type="text/javascript " src="{{ url_for('static', filename='js/lightbox.js  ') }}"></script>
+    <script type="text/javascript " src="{{ url_for('static', filename='js/all.js  ') }}"></script>
+    <script type="text/javascript " src="{{ url_for('static', filename='js/isotope.pkgd.min.js ') }}"></script>
+    <script type="text/javascript " src="{{ url_for('static', filename='js/owl.carousel.js ') }}"></script>
+    <script type="text/javascript " src="{{ url_for('static', filename='js/jquery.flexslider.js ') }}"></script>
+    <script type="text/javascript " src="{{ url_for('static', filename='js/jquery.rateyo.js ') }}"></script>
+    <!-- <script type="text/javascript " src="js/jquery.mmenu.all.js "></script> -->
+    <!-- <script type="text/javascript " src="js/jquery.meanmenu.min.js "></script> -->
+    <script type="text/javascript " src="{{ url_for('static', filename='js/custom.js  ') }}"></script>
+</body>
+
+</html>
